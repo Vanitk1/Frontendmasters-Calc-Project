@@ -1,0 +1,108 @@
+#title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.calc-container {
+    display: grid;
+    grid-template-areas: 
+    "top-bar top-bar top-bar top-bar"
+    "clear clear back-arrow divide"
+    "seven eight nine times"
+    "four five six minus"
+    "one two three plus"
+    "zero zero zero equal"; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top-bar {
+    grid-area: top-bar;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: right;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.back-arrow {
+    grid-area: back-arrow;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine { 
+    grid-area: nine; 
+}
+
+.minus { 
+    grid-area: minus; 
+}
+
+.four { 
+    grid-area: four; 
+}
+.five { 
+    grid-area: five; 
+}
+
+.six { 
+    grid-area: six; 
+}
+
+.plus { 
+    grid-area: plus; 
+}
+
+.one { 
+    grid-area: one; 
+}
+
+.two { 
+    grid-area: two;
+}
+
+.three { 
+    grid-area: three; 
+}
+
+.equal { 
+    grid-area: equal; 
+}
+
+.zero { 
+    grid-area: zero; 
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+    background-color: lightgray;
+}
